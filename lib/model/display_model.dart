@@ -1,5 +1,3 @@
-library web_spa_flutter;
-
 class DisplayModel {
   static const String _keyDisplayId = "display_id";
   static const String _keyType = "type";

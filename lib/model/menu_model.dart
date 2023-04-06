@@ -1,5 +1,3 @@
-library web_spa_flutter;
-
 import 'package:web_spa_flutter/model/icon_model.dart';
 
 class MenuModel {

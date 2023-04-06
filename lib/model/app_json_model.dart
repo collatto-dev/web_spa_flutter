@@ -1,5 +1,3 @@
-library web_spa_flutter;
-
 import 'package:web_spa_flutter/model/display_model.dart';
 import 'package:web_spa_flutter/model/header_model.dart';
 import 'package:web_spa_flutter/model/menu_model.dart';

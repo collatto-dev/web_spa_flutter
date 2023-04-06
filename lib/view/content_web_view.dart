@@ -1,5 +1,3 @@
-library web_spa_flutter;
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
