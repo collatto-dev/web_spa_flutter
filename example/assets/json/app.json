@@ -1,0 +1,118 @@
+{
+    "header": {
+        "icon": {
+            "url": "http://xxxx",
+            "width": 40,
+            "height": 40
+        },
+        "title": "example",
+        "background_color": "FF99E9EA"
+    },
+    "menu": {
+        "type": "bottom_menu",
+        "background_color": "FF99E9EA",
+        "selected_text_color": "FF3F48CC",
+        "unselected_text_color": "FF000000",
+        "items": [
+            {
+                "name": "menu1",
+                "icon": {
+                    "url": "http://xxxx",
+                    "width": 40,
+                    "height": 40
+                },
+                "display_id": "display1",
+                "order": 1
+            },
+            {
+                "name": "menu2",
+                "icon": {
+                    "url": "http://xxxx",
+                    "width": 40,
+                    "height": 40
+                },
+                "display_id": "display2",
+                "order": 2
+            },
+            {
+                "name": "menu3",
+                "icon": {
+                    "url": "http://xxxx",
+                    "width": 40,
+                    "height": 40
+                },
+                "display_id": "display3",
+                "order": 3
+            },
+            {
+                "name": "menu4",
+                "icon": {
+                    "url": "http://xxxx",
+                    "width": 40,
+                    "height": 40
+                },
+                "display_id": "display4",
+                "order": 4
+            }
+        ]
+    },
+    "displays": [
+        {
+            "display_id": "display1",
+            "type": "web_view",
+            "contents": [
+                {
+                    "type": "outer_web_file",
+                    "url": "https://pub.dev/"
+                }
+            ]
+        },
+        {
+            "display_id": "display2",
+            "type": "web_view",
+            "contents": [
+                {
+                    "type": "outer_web_file",
+                    "url": "https://dart.dev/"
+                }
+            ]
+        },
+        {
+            "display_id": "display3",
+            "type": "external_browser",
+            "contents": [
+                {
+                    "type": "outer_web_file",
+                    "url": "https://dart.dev/"
+                }
+            ]
+        },
+        {
+            "display_id": "display4",
+            "type": "web_view",
+            "contents": [
+                {
+                    "type": "inner_web_file",
+                    "url": "assets/html/test.html",
+                    "links": [
+                        {
+                            "trigger_url": "https://pub.dev/",
+                            "type": "display",
+                            "reference_target": "display1"
+                        },
+                        {
+                            "trigger_url": "https://fuchsia.dev/",
+                            "type": "web_view",
+                            "reference_target": "https://dart.dev/"
+                        },
+                        {
+                            "trigger_url": "https://flutter.dev/",
+                            "type": "external_browser",
+                            "reference_target": "https://flutter.dev/"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
