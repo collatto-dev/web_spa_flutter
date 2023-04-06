@@ -1,5 +1,3 @@
-library web_spa_flutter;
-
 class IconModel {
 
   static const String _keyUrl = "url";
